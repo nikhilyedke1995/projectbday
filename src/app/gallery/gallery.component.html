@@ -1,0 +1,30 @@
+<div class="container">
+<div *ngIf="!details">
+  <mat-spinner></mat-spinner>
+</div>
+
+<mat-grid-list cols="2:1" rowHeight="500px" gutterSize="5px" >
+ 
+<mat-grid-tile *ngFor="let wish of details">
+  
+  <mat-card class="example-card">
+     <mat-card-header>
+      <div mat-card-avatar [ngStyle]="setMyStyle(wish)"></div>
+      <mat-card-title>{{wish.name}}</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>  
+  <a [routerLink]="['/detailimage',wish.id]">
+    <img mat-card-image src={{wish.imageUrl}} width="200" height="350">
+  </a>
+    <mat-card-content>
+      <p>
+        {{limitString(wish.bdayMsg)}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+  
+  </mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+</mat-grid-list>
+
+</div>

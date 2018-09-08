@@ -1,0 +1,79 @@
+ .fullscreen {
+    background-color: #522db5;
+    z-index: 10;
+    flex: 1;
+    padding:20px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+display:inline-block;
+}
+
+.mat-card{
+    background-image:  linear-gradient(to right, #311b92 , #000);
+    height: 85%;
+    width: 92%;
+}
+
+#box{
+    display: inline;
+
+}
+
+#welcomenote{
+    width: 25%;
+} 
+
+
+#photo{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    margin: 5%;
+    left: 60%;     
+  }
+
+
+  #photo img{
+      width: 100%;
+      height: 80%;
+      opacity: 0.9;
+  }
+
+
+  #welcomenote{
+      text-align: left;
+      margin: 5%;
+       width:30%;
+      /*background: #902312; */
+      opacity: 0.8;
+      position: absolute;
+  }
+
+  h1{
+      color:wheat;
+      font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+      font-style: bold;
+      font-variant: normal;
+      font-weight: 700;
+      font-size: 50px;
+  }
+
+  h3{
+      color:whitesmoke;
+      font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+    font-size: 30px;
+    }
+
+  .container{
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+
+  .balloon img{
+      opacity: 0.3;
+  }
