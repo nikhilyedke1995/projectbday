@@ -15,10 +15,7 @@ export class FetchdetailsService {
     return this.wishes;
    }
 
-  //  getUserWishes(id:number){
-  //    return this.database.collection('wishes').doc(id.toString()).valueChanges();
-  //  }
-
+  
 
 
   }
